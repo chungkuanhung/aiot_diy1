@@ -41,6 +41,5 @@ aiot_diy1/
 ├── index.html          # 主程式：包含 HTML 結構、CSS 樣式與 JS 邏輯
 ├── README.md           # 專案說明文件檔 (即本文件)
 ├── ai_conversation.md  # 🤖 AI Agent 協同開發對話完整紀錄
-├── screenshot.png      # 網頁成品截圖 (請自行上傳替換)
-└── bot_chat_1.png      # (若有) AI 互動對話截圖
+└── screenshot.png      # 網頁成品截圖 (請自行上傳替換)
 ```
