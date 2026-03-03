@@ -1,35 +1,49 @@
-# 個人資訊與動態時間展示網頁 (Personal Info & Dynamic Time Webpage)
+# 114-2 智慧物聯網應用與實作 - 網頁開發基礎 (AIoT DIY 1)
+
+**個人資訊與動態時間展示網頁 (Personal Info & Dynamic Time Webpage)**
 
 ![首頁截圖 Snapshot](./screenshot.png)
 
 🔗 **Live Demo:** [https://chungkuanhung.github.io/aiot_diy1/](https://chungkuanhung.github.io/aiot_diy1/)
 
-這是一個簡單的靜態網頁作品，主要展示個人中英文姓名以及即時更新的現在時間。此專案做為「智慧物聯網應用與實作」課程的基礎練習。
+---
 
-## 功能介紹 (Features)
+## 📝 本次計畫做了什麼事？ (Project Objectives)
 
-*   **個人資訊展示**：顯示中文姓名「鍾冠泓」與英文姓名「KUAN HUNG CHUNG」。
-*   **動態時鐘**：透過 JavaScript 自動獲取系統當前時間，並以「時:分:秒」的格式即時更新。
-*   **動態日期**：在網頁載入時自動取得並顯示當天的詳細日期。
-*   **現代化 UI 設計**：
-    *   採用 Glassmorphism（玻璃擬物化）設計風格，呈現半透明且帶有模糊背景的質感卡片。
-    *   動態全螢幕漸層背景，增添視覺豐富度。
-*   **響應式設計 (Responsive Web Design, RWD)**：
-    *   使用 CSS `@media` queries，確保在電腦、平板與手機等不同螢幕尺寸下，均能保有最佳的閱讀體驗與版面配置自動縮放。
+本次計畫為「智慧物聯網應用與實作」課程的第一次動手做任務 (DIY 1)，主要目標是：
+1. **環境建置**：安裝並熟悉 Google 推出之「Anti Gravity」AI IDE 工具。
+2. **網頁實作**：運用 AI Agent 輔助，開發一個單頁式靜態網頁 (Single-page Web Application)。
+3. **功能需求**：網頁中明確展示了我的**中文與英文姓名**，以及透過 JavaScript 即時抓取系統的**動態現在時間與日期**。
+4. **版本控制與部署**：學習建立 GitHub Repository，將專案原始碼推送至遠端，並使用 **GitHub Pages** 服務將網頁部署上線，產生可對外展示的 Live Demo 連結。
 
-## 使用技術 (Tech Stack)
+## 🛠️ 如何做到的？ (Implementation Details)
 
-*   **HTML5**
-*   **CSS3** (Flexbox, Media Queries 響應式設計, CSS Animations)
-*   **JavaScript (Vanilla JS)**
+這個專案是透過與 AI Agent (Anti Gravity) 協作並運用純前端技術完成的，實作細節如下：
 
-## 如何執行 (How to Run)
+1. **AI 協同開發 (Bot Interaction)**：
+    * 透過下達清晰的中文/英文 Prompt（指令），請 AI Agent 幫忙建立 HTML 骨架、撰寫 CSS 樣式與設計 JavaScript 邏輯。
+    * 要求 AI 採用現代化的 **Glassmorphism (玻璃擬物化)** 風格與全螢幕動態漸層背景，跳脫傳統陽春範本。
+    * *以下為與 AI Bot 開發互動的對話紀錄截圖 (Bot Interaction History)：*
+    ![Bot 對話紀錄截圖 1](./bot_chat_1.png)
+    *(註：若有多張截圖可依序補上 bot_chat_2.png 等...)*
 
-這是一個純前端的靜態網頁，不需要安裝任何伺服器環境或依賴套件。
+2. **技術堆疊 (Tech Stack)**：
+    * **HTML5**：定義網頁結構與各區塊語意。
+    * **CSS3**：負責視覺排版、動態背景特效 (`@keyframes`)，並運用 `@media queries` 實作 **Responsive Web Design (RWD 響應式裝置設計)**，讓網頁在手機、平板與電腦螢幕上都能有最佳的閱讀體驗。
+    * **JavaScript (Vanilla JS)**：負責操作 DOM 物件，使用 `new Date()` 讀取當下時間，並配合 `setInterval` 達成每秒自動重新渲染時間的功能。
 
-1. 在您的電腦中找到 `index.html` 檔案。
-2. 對檔案連按兩下，即可透過您預設的網頁瀏覽器開啟並檢視網頁效果。
+3. **部屬流程 (Deployment)**：
+    * 透過終端機 (Terminal) 執行 `git init`, `git add`, `git commit` 將程式碼版控。
+    * 執行 `git push` 推送至 `github.com/chungkuanhung/aiot_diy1`。
+    * 在 GitHub Repo Settings 中開啟 **GitHub Pages**，指定由 `main` 分支進行發布。
 
-## 部署與發布 (Deployment)
+## 📂 檔案結構 (Project Structure)
 
-本專案已透過 **GitHub Pages** (由 `main` 分支) 進行無伺服器網頁託管部署，您可以直接點擊上方的 **Live Demo** 連結觀看最終呈現效果。
+```text
+aiot_diy1/
+├── index.html          # 主程式：包含 HTML 結構、CSS 樣式與 JS 邏輯
+├── README.md           # 專案說明文件檔 (即本文件)
+├── ai_conversation.md  # 🤖 AI Agent 協同開發對話完整紀錄
+├── screenshot.png      # 網頁成品截圖 (請自行上傳替換)
+└── bot_chat_1.png      # (若有) AI 互動對話截圖
+```
