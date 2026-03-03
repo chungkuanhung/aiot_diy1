@@ -23,10 +23,7 @@
 1. **AI 協同開發 (Bot Interaction)**：
     * 透過下達清晰的中文/英文 Prompt（指令），請 AI Agent 幫忙建立 HTML 骨架、撰寫 CSS 樣式與設計 JavaScript 邏輯。
     * 要求 AI 採用現代化的 **Glassmorphism (玻璃擬物化)** 風格與全螢幕動態漸層背景，跳脫傳統陽春範本。
-    * *以下為與 AI Bot 開發互動的對話紀錄截圖 (Bot Interaction History)：*
-    ![Bot 對話紀錄截圖 1](./bot_chat_1.png)
-    *(註：若有多張截圖可依序補上 bot_chat_2.png 等...)*
-
+    
 2. **技術堆疊 (Tech Stack)**：
     * **HTML5**：定義網頁結構與各區塊語意。
     * **CSS3**：負責視覺排版、動態背景特效 (`@keyframes`)，並運用 `@media queries` 實作 **Responsive Web Design (RWD 響應式裝置設計)**，讓網頁在手機、平板與電腦螢幕上都能有最佳的閱讀體驗。
