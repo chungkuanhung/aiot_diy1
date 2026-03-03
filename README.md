@@ -29,7 +29,7 @@
     * **CSS3**：負責視覺排版、動態背景特效 (`@keyframes`)，並運用 `@media queries` 實作 **Responsive Web Design (RWD 響應式裝置設計)**，讓網頁在手機、平板與電腦螢幕上都能有最佳的閱讀體驗。
     * **JavaScript (Vanilla JS)**：負責操作 DOM 物件，使用 `new Date()` 讀取當下時間，並配合 `setInterval` 達成每秒自動重新渲染時間的功能。
 
-3. **部屬流程 (Deployment)**：
+3. **部署流程 (Deployment)**：
     * 透過終端機 (Terminal) 執行 `git init`, `git add`, `git commit` 將程式碼版控。
     * 執行 `git push` 推送至 `github.com/chungkuanhung/aiot_diy1`。
     * 在 GitHub Repo Settings 中開啟 **GitHub Pages**，指定由 `main` 分支進行發布。
