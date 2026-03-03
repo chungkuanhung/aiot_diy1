@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,17 @@
         }
 
         @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .glass-card {
@@ -108,23 +117,54 @@
             font-weight: 300;
         }
 
-        @media (max-width: 600px) {
+        /* ===== Responsive Design (RWD) ===== */
+        @media (max-width: 768px) {
+            .glass-card {
+                padding: 2.5rem 3rem;
+                width: 85%;
+            }
+
+            .name-zh {
+                font-size: 2.8rem;
+            }
+
+            .time-display {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
             .glass-card {
                 padding: 2rem;
-                width: 90%;
+                width: 95%;
             }
-            .name-zh { font-size: 2.5rem; }
-            .time-display { font-size: 2.5rem; }
+
+            .name-zh {
+                font-size: 2.2rem;
+            }
+
+            .name-en {
+                font-size: 1rem;
+            }
+
+            .time-display {
+                font-size: 2.2rem;
+            }
+
+            .date-display {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="glass-card">
         <div class="name-container">
             <h1 class="name-zh">鍾冠泓</h1>
             <h2 class="name-en">KUAN HUNG CHUNG</h2>
         </div>
-        
+
         <div class="time-container">
             <div class="time-label">Current Time</div>
             <div class="time-display" id="time">00:00:00</div>
@@ -135,13 +175,13 @@
     <script>
         function updateTime() {
             const now = new Date();
-            
+
             // Format time
             const hours = String(now.getHours()).padStart(2, '0');
             const minutes = String(now.getMinutes()).padStart(2, '0');
             const seconds = String(now.getSeconds()).padStart(2, '0');
             document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
-            
+
             // Format date
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             document.getElementById('date').textContent = now.toLocaleDateString('zh-TW', options);
@@ -152,4 +192,5 @@
         setInterval(updateTime, 1000);
     </script>
 </body>
+
 </html>
